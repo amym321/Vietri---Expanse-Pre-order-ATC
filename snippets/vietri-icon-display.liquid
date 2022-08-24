@@ -1,0 +1,32 @@
+<div class="icon-display">
+     {% if product.tags contains 'Dishwasher' %}
+  <img src="{{ 'DishwasherSafe.png' | asset_img_url: '1000x1000' }}">
+  {% endif %}
+    {% if product.tags contains 'Dishwasher Safe' %}
+  <img src="{{ 'DishwasherSafe.png' | asset_img_url: '1000x1000' }}">
+  {% endif %}
+     {% if product.tags contains 'Top Rack' %}
+  <img src="{{ 'DishwasherSafe-TopRack.png' | asset_img_url: '1000x1000' }}">
+  {% endif %}
+      {% if product.tags contains 'Microwave' %}
+  <img src="{{ 'MicrowaveSafe.png' | asset_img_url: '1000x1000' }}">
+  {% endif %}
+      {% if product.tags contains 'Freezer safe' %}
+  <img src="{{ 'FreezerSafe.png' | asset_img_url: '1000x1000' }}">
+  {% endif %}
+   {% if product.tags contains 'Oven' %}
+  <img src="{{ 'OVEN-ICON.png' | asset_img_url: '1000x1000' }}">
+  {% endif %}
+    {% if product.tags contains 'Food Safe' %}
+  <img src="{{ 'FoodSafe.png' | asset_img_url: '1000x1000' }}">
+  {% endif %}  
+    {% if product.tags contains 'BPA Free' %}
+  <img src="{{ 'BPAFree.png' | asset_img_url: '1000x1000' }}">
+  {% endif %}
+              {% if product.tags contains 'Stoneware' %}
+  <img src="{{ 'Stoneware.png' | asset_img_url: '1000x1000' }}">
+  {% endif %}
+    {% if product.tags contains 'Chip Resistant' %}
+  <img src="{{ 'ChipResistant.png' | asset_img_url: '1000x1000' }}">
+  {% endif %}
+            </div>
