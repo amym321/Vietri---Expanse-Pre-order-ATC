@@ -3428,6 +3428,7 @@
           "one": "Rupture de stock : {{ count }} article restant",
           "other": "Rupture de stock : {{ count }} articles restants"
         },
+        "preorder_stock_label": "Available for pre-order",
         "sold_out": "Vendu",
         "unavailable": "Non disponible",
         "quantity": "Quantité",

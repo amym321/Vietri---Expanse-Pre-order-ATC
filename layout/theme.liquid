@@ -65,8 +65,11 @@
     theme.strings = {
       soldOut: {{ 'products.product.sold_out' | t | json }},
       unavailable: {{ 'products.product.unavailable' | t | json }},
+      addToCart: {{ 'products.product.add_to_cart' | t | json }},
+      preorder: {{ 'products.product.preorder' | t | json }},
       inStockLabel: {{ 'products.product.in_stock_label' | t | json }},
       stockLabel: {{ 'products.product.stock_label' | t: count: '[count]' | json }},
+      preorderStockLabel: {{ 'products.product.preorder_stock_label' | t: count: '[count]' | json }},
       willNotShipUntil: {{ 'products.product.will_not_ship_until' | t: date: '[date]' | json }},
       willBeInStockAfter: {{ 'products.product.will_be_in_stock_after' | t: date: '[date]' | json }},
       waitingForStock: {{ 'products.product.waiting_for_stock' | t | json }},

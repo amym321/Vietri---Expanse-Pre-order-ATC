@@ -54,8 +54,9 @@
   window.levar_onload_variant_id = levar_onload_variant_id;
 </script>
 
+{% comment %} add preorder class for JS AJAX - am  {% endcomment %}
 <div id="ProductSection-{{ section_id }}-{{ product.id }}"
-  class="product-section"
+  class="product-section{% if template contains 'preorder' %}-preorder{% endif %}"
   data-section-id="{{ section_id }}"
   data-section-type="product"
   data-product-id="{{ product.id }}"

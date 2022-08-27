@@ -331,6 +331,7 @@
       "description": "Descrição",
       "in_stock_label": "Em estoque",
       "stock_label": "{{ count }} em estoque",
+      "preorder_stock_label": "Available for pre-order",
       "sold_out": "Esgotado",
       "unavailable": "Indisponível",
       "quantity": "Quantidade",

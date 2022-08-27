@@ -334,6 +334,7 @@
         "one": "Low stock - {{ count }} item left",
         "other": "Low stock - {{ count }} items left"
       },
+      "preorder_stock_label": "Available for pre-order",
       "sold_out": "Sold Out",
       "unavailable": "Unavailable",
       "quantity": "Quantity",

@@ -3431,6 +3431,7 @@
           "one": "Magazzino basso, {{ count }} articolo rimasto",
           "other": "Magazzino basso, {{ count }} articoli rimasti"
         },
+        "preorder_stock_label": "Available for pre-order",
         "sold_out": "Esaurito",
         "unavailable": "Non disponibile",
         "quantity": "Quantità",

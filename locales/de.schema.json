@@ -3431,6 +3431,7 @@
           "one": "Geringer Lagerbestand - {{ count }} Artikel übrig",
           "other": "Geringer Lagerbestand - {{ count }} Artikel übrig"
         },
+        "preorder_stock_label": "Available for pre-order",
         "sold_out": "Ausverkauft",
         "unavailable": "Nicht verfügbar",
         "quantity": "Menge",
