@@ -7607,7 +7607,7 @@ lazySizesConfig.expFactor = 4;
         var inventoryPolicyVariant =  inventoryPolicyContainer.getAttribute('data-variant-inventory-policy');
         var preorderTemplate = document.getElementsByClassName('product-section-preorder');
         var preorderText2 = document.getElementById('preorderText');
-        
+
         if (variant) {
           if (variant.available) {
             // Available, enable the submit button and change text
@@ -7845,13 +7845,16 @@ lazySizesConfig.expFactor = 4;
         if (inventoryQuantity <= 0 && preorderTemplate.length > 0 && inventoryPolicyVariant == 'continue') { // preorder message
           // inventory < 0 && preorder template && policy = 'continue'
           el.parentNode.classList.remove('inventory--low')
+          el.parentNode.classList.add('inventory--preorder')
           el.textContent = theme.strings.preorderStockLabel;
         } else { // either in-stock or low stock message
           if (parseInt(qty) <= parseInt(this.settings.inventoryThreshold)) {  // low stock with count
             el.parentNode.classList.add('inventory--low')
+            el.parentNode.classList.remove('inventory--preorder')
             el.textContent = theme.strings.stockLabel.replace('[count]', qty);
           } else {    // in stock
             el.parentNode.classList.remove('inventory--low')
+            el.parentNode.classList.remove('inventory--preorder')
             el.textContent = theme.strings.inStockLabel;
           }
         }

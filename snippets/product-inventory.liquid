@@ -14,12 +14,21 @@
   if current_variant.incoming and inventory_visible == false and current_variant.inventory_quantity <= block.settings.inventory_threshold
     assign show_incoming = true
   endif
+
+  assign inventory_preorder = false
+  if current_variant.inventory_quantity <= 0 and template contains 'preorder' and current_variant.inventory_policy == 'continue'
+    assign inventory_preorder = true
+  endif
 -%}
 
 <div class="product-block product-block--sales-point{% unless current_variant.available or show_incoming %} hide{% endunless %}" {{ block.shopify_attributes }}>
   <ul class="sales-points">
     <li class="sales-point">
-      <span class="icon-and-text{% if inventory_visible == true %} inventory--low{% endif %}{% unless current_variant.available %} hide{% endunless %}">
+      <span class="icon-and-text
+        {% if inventory_visible == true %} inventory--low{% endif %}
+        {% unless current_variant.available %} hide{% endunless %}
+        {% if inventory_preorder == true %} inventory--preorder{% endif %}"
+      >
         <span class="icon icon--inventory"></span>
         <span data-product-inventory data-threshold="{{ block.settings.inventory_threshold }}">
           {% comment %} add preorder text - am  {% endcomment %}
